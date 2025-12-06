@@ -9,6 +9,7 @@
 
 ### Session 2025-12-07
 - Q: Should the course primarily target a specific, documented cloud GPU environment, or should it assume students have their own powerful local workstations? → A: Support both equally. Provide two parallel sets of detailed instructions for both local and a specific cloud setup.
+- Q: Should the course materials be restricted to plain Markdown to ensure maximum portability, or can they leverage the richer, interactive features of MDX? → A: Allow and encourage MDX. Leverage interactive components for things like quizzes, interactive simulations, and callouts.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -89,7 +90,7 @@ As a student, I want to build an end-to-end system that allows a humanoid robot 
 - **FR-005**: The course MUST include examples of using NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation.
 - **FR-006**: The course MUST demonstrate how to use the Isaac ROS Nav2 stack for bipedal navigation.
 - **FR-007**: The capstone project MUST integrate Whisper for voice recognition and an LLM for task planning.
-- **FR-008**: All course materials and examples MUST be provided in Markdown format.
+- **FR-008**: All course materials and examples MUST be provided in Markdown or MDX format, leveraging MDX for interactive components where appropriate.
 - **FR-009**: The final project MUST demonstrate an autonomous task pipeline: voice command -> planning -> navigation -> object identification -> manipulation.
 - **FR-010**: The course MUST provide two parallel sets of detailed setup instructions for both a local RTX-enabled workstation and a specific, documented cloud GPU environment.
 
