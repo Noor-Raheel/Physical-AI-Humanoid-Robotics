@@ -1,0 +1,86 @@
+# Course Syllabus Contract
+# This file defines the high-level structure and learning objectives for the course.
+# It serves as the primary contract for the content that will be developed.
+
+course_title: "Physical AI & Humanoid Robotics: A 4-Module Course"
+
+parts:
+  - part: 1
+    title: "The Robotic Nervous System (ROS 2)"
+    description: "An introduction to the core middleware for modern robotics. Students will learn to create, manage, and debug robot software applications."
+    chapters:
+      - chapter: 1
+        title: "Introduction to ROS 2"
+        learning_objectives:
+          - "Explain the role of middleware in robotics."
+          - "Describe the core concepts: nodes, topics, services, and actions."
+          - "Use ROS 2 command-line tools to inspect a running system."
+      - chapter: 2
+        title: "Programming with rclpy"
+        learning_objectives:
+          - "Write a Python script to create a ROS 2 node."
+          - "Implement publishers and subscribers to send and receive messages."
+          - "Create a simple service and client."
+      - chapter: 3
+        title: "Defining Your Robot with URDF"
+        learning_objectives:
+          - "Describe the purpose of the Unified Robot Description Format (URDF)."
+          - "Create a simple URDF file for a multi-link robot."
+          - "Visualize the robot model in RViz."
+
+  - part: 2
+    title: "The Digital Twin (Gazebo & Unity)"
+    description: "Students will learn to simulate robots in realistic, physics-based environments to test their behavior and sensor outputs safely."
+    chapters:
+      - chapter: 1
+        title: "Physics Simulation Fundamentals"
+        learning_objectives:
+          - "Explain the importance of physics simulation in robotics."
+          - "Set up a simulation environment in Gazebo or Unity."
+          - "Add and configure robot models and environmental objects."
+      - chapter: 2
+        title: "Simulating Sensors"
+        learning_objectives:
+          - "Add a simulated LiDAR to a robot model."
+          - "Add a simulated depth camera and visualize its point cloud."
+          - "Read data from a simulated IMU."
+
+  - part: 3
+    title: "The AI-Robot Brain (NVIDIA Isaac)"
+    description: "This part focuses on using advanced NVIDIA tools for perception, navigation, and synthetic data generation in photorealistic environments."
+    chapters:
+      - chapter: 1
+        title: "Introduction to Isaac Sim"
+        learning_objectives:
+          - "Set up and run a project in NVIDIA Isaac Sim."
+          - "Import a URDF model and configure its physics properties."
+      - chapter: 2
+        title: "Synthetic Data Generation"
+        learning_objectives:
+          - "Create a simple scene for a perception task."
+          - "Use Isaac Sim's tools to generate a labeled dataset of images."
+      - chapter: 3
+        title: "Navigation with Isaac ROS"
+        learning_objectives:
+          - "Configure and launch the Isaac ROS Nav2 stack."
+          - "Send a navigation goal to a humanoid robot and watch it execute the plan."
+
+  - part: 4
+    title: "Vision-Language-Action (VLA)"
+    description: "The capstone part where students integrate all previous concepts to build a robot that can understand voice commands and perform complex tasks."
+    chapters:
+      - chapter: 1
+        title: "Voice-to-Text with Whisper"
+        learning_objectives:
+          - "Set up the Whisper API or a local equivalent."
+          - "Create a ROS 2 node that listens to a microphone and publishes transcribed text."
+      - chapter: 2
+        title: "LLM-based Task Planning"
+        learning_objectives:
+          - "Design a prompt for an LLM to convert a natural language command into a sequence of robot actions."
+          - "Create a ROS 2 node that queries an LLM and publishes the action plan."
+      - chapter: 3
+        title: "Capstone Integration"
+        learning_objectives:
+          - "Assemble the full VLA pipeline."
+          - "Successfully command the robot to perform the capstone task: 'pick up the red cube'."
