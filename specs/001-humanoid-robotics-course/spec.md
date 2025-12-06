@@ -10,6 +10,7 @@
 ### Session 2025-12-07
 - Q: Should the course primarily target a specific, documented cloud GPU environment, or should it assume students have their own powerful local workstations? → A: Support both equally. Provide two parallel sets of detailed instructions for both local and a specific cloud setup.
 - Q: Should the course materials be restricted to plain Markdown to ensure maximum portability, or can they leverage the richer, interactive features of MDX? → A: Allow and encourage MDX. Leverage interactive components for things like quizzes, interactive simulations, and callouts.
+- Q: Is this hierarchy a strict, enforced structure that every piece of content must adhere to, or is it a general guideline that can be flexibly interpreted...? → A: Strict Hierarchy: Every Chapter MUST belong to a Part, every Section to a Chapter, etc. The structure is rigidly enforced.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -93,6 +94,7 @@ As a student, I want to build an end-to-end system that allows a humanoid robot 
 - **FR-008**: All course materials and examples MUST be provided in Markdown or MDX format, leveraging MDX for interactive components where appropriate.
 - **FR-009**: The final project MUST demonstrate an autonomous task pipeline: voice command -> planning -> navigation -> object identification -> manipulation.
 - **FR-010**: The course MUST provide two parallel sets of detailed setup instructions for both a local RTX-enabled workstation and a specific, documented cloud GPU environment.
+- **FR-011**: All course content MUST strictly adhere to the `Part → Chapter → Section → Example → Checklist` hierarchy defined in the Constitution.
 
 ### Out of Scope
 
