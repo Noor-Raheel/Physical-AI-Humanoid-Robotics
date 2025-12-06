@@ -1,0 +1,16 @@
+# Git
+.git/
+.gitignore
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docusaurus build artifacts
+build/
+.docusaurus/
+.cache-loader/
+
+# Local environment
+.env*

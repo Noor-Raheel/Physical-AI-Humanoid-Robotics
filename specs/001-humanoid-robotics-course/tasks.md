@@ -21,9 +21,9 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 **Purpose**: Initialize the Docusaurus project and create the basic course structure.
 
-- [ ] T001 Initialize a new Docusaurus classic project in a `docusaurus-site/` directory.
-- [ ] T002 [P] Create the course directory structure inside `docusaurus-site/docs/` based on the 4 parts from the syllabus.
-- [ ] T003 Configure the `docusaurus-site/sidebars.js` file to match the course's `Part -> Chapter` hierarchy.
+- [X] T001 Initialize a new Docusaurus classic project in a `docusaurus-site/` directory.
+- [X] T002 [P] Create the course directory structure inside `docusaurus-site/docs/` based on the 4 parts from the syllabus.
+- [X] T003 Configure the `docusaurus-site/sidebars.js` file to match the course's `Part -> Chapter` hierarchy.
 
 ---
 
@@ -31,9 +31,9 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 **Purpose**: Make key technical decisions and select standard assets before content creation begins.
 
-- [ ] T004 Research and decide on the specific versions of ROS 2, Gazebo, Unity, and NVIDIA Isaac Sim to be used, as per `research.md`. Document this in a new `docusaurus-site/docs/00-course-stack.md` file.
-- [ ] T005 [P] Research and select a standard, open-source humanoid URDF model. Add the model files to a `docusaurus-site/static/models/` directory.
-- [ ] T006 [P] Create a standard project-wide stylesheet in `docusaurus-site/src/css/custom.css` and document the APA citation format to be used in footnotes.
+- [X] T004 Research and decide on the specific versions of ROS 2, Gazebo, Unity, and NVIDIA Isaac Sim to be used, as per `research.md`. Document this in a new `docusaurus-site/docs/00-course-stack.md` file.
+- [X] T005 [P] Research and select a standard, open-source humanoid URDF model. Add the model files to a `docusaurus-site/static/models/` directory.
+- [X] T006 [P] Create a standard project-wide stylesheet in `docusaurus-site/src/css/custom.css` and document the APA citation format to be used in footnotes.
 
 ---
 
@@ -44,11 +44,11 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 ### Implementation for User Story 1
 
-- [ ] T007 [US1] Write content for Chapter 1, "Introduction to ROS 2", in `docusaurus-site/docs/part-1-ros2/01-introduction.mdx`.
-- [ ] T008 [US1] Write content for Chapter 2, "Programming with rclpy", in `docusaurus-site/docs/part-1-ros2/02-rclpy-programming.mdx`.
-- [ ] T009 [US1] Write content for Chapter 3, "Defining Your Robot with URDF", in `docusaurus-site/docs/part-1-ros2/03-urdf-definition.mdx`.
-- [ ] T010 [P] [US1] Create code examples for `rclpy` publishers and subscribers, placing them in `docusaurus-site/src/code-examples/ros2/`.
-- [ ] T011 [P] [US1] Create a basic launch file to visualize the selected URDF model in RViz, placing it in `docusaurus-site/src/code-examples/ros2/`.
+- [X] T007 [US1] Write content for Chapter 1, "Introduction to ROS 2", in `docusaurus-site/docs/part-1-ros2/01-introduction.mdx`.
+- [X] T008 [US1] Write content for Chapter 2, "Programming with rclpy", in `docusaurus-site/docs/part-1-ros2/02-rclpy-programming.mdx`.
+- [X] T009 [US1] Write content for Chapter 3, "Defining Your Robot with URDF", in `docusaurus-site/docs/part-1-ros2/03-urdf-definition.mdx`.
+- [X] T010 [P] [US1] Create code examples for `rclpy` publishers and subscribers, placing them in `docusaurus-site/src/code-examples/ros2/`.
+- [X] T011 [P] [US1] Create a basic launch file to visualize the selected URDF model in RViz, placing it in `docusaurus-site/src/code-examples/ros2/`.
 
 ---
 
@@ -59,9 +59,9 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Write content for Chapter 1, "Physics Simulation Fundamentals", in `docusaurus-site/docs/part-2-digital-twin/01-physics-fundamentals.mdx`.
-- [ ] T013 [US2] Write content for Chapter 2, "Simulating Sensors", in `docusaurus-site/docs/part-2-digital-twin/02-simulating-sensors.mdx`.
-- [ ] T014 [P] [US2] Create example configurations for adding LiDAR, depth camera, and IMU plugins to the URDF model for the chosen simulator, placing them in `docusaurus-site/src/code-examples/simulation/`.
+- [X] T012 [US2] Write content for Chapter 1, "Physics Simulation Fundamentals", in `docusaurus-site/docs/part-2-digital-twin/01-physics-fundamentals.mdx`.
+- [X] T013 [US2] Write content for Chapter 2, "Simulating Sensors", in `docusaurus-site/docs/part-2-digital-twin/02-simulating-sensors.mdx`.
+- [X] T014 [P] [US2] Create example configurations for adding LiDAR, depth camera, and IMU plugins to the URDF model for the chosen simulator, placing them in `docusaurus-site/src/code-examples/simulation/`.
 
 ---
 
@@ -72,10 +72,10 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 ### Implementation for User Story 3
 
-- [ ] T015 [US3] Write content for Chapter 1, "Introduction to Isaac Sim", in `docusaurus-site/docs/part-3-ai-brain/01-intro-isaac-sim.mdx`.
-- [ ] T016 [US3] Write content for Chapter 2, "Synthetic Data Generation", in `docusaurus-site/docs/part-3-ai-brain/02-synthetic-data.mdx`.
-- [ ] T017 [US3] Write content for Chapter 3, "Navigation with Isaac ROS", in `docusaurus-site/docs/part-3-ai-brain/03-isaac-ros-nav.mdx`.
-- [ ] T018 [P] [US3] Create code examples for the synthetic data generation workflow, placing them in `docusaurus-site/src/code-examples/isaac/`.
+- [X] T015 [US3] Write content for Chapter 1, "Introduction to Isaac Sim", in `docusaurus-site/docs/part-3-ai-brain/01-intro-isaac-sim.mdx`.
+- [X] T016 [US3] Write content for Chapter 2, "Synthetic Data Generation", in `docusaurus-site/docs/part-3-ai-brain/02-synthetic-data.mdx`.
+- [X] T017 [US3] Write content for Chapter 3, "Navigation with Isaac ROS", in `docusaurus-site/docs/part-3-ai-brain/03-isaac-ros-nav.mdx`.
+- [X] T018 [P] [US3] Create code examples for the synthetic data generation workflow, placing them in `docusaurus-site/src/code-examples/isaac/`.
 
 ---
 
@@ -86,10 +86,10 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 ### Implementation for User Story 4
 
-- [ ] T019 [US4] Write content for Chapter 1, "Voice-to-Text with Whisper", in `docusaurus-site/docs/part-4-vla/01-voice-to-text.mdx`.
-- [ ] T020 [US4] Write content for Chapter 2, "LLM-based Task Planning", in `docusaurus-site/docs/part-4-vla/02-llm-planning.mdx`.
-- [ ] T021 [US4] Write content for Chapter 3, "Capstone Integration", in `docusaurus-site/docs/part-4-vla/03-capstone-integration.mdx`.
-- [ ] T022 [P] [US4] Create the full set of integrated ROS 2 nodes and launch files for the VLA pipeline example in `docusaurus-site/src/code-examples/vla/`.
+- [X] T019 [US4] Write content for Chapter 1, "Voice-to-Text with Whisper", in `docusaurus-site/docs/part-4-vla/01-voice-to-text.mdx`.
+- [X] T020 [US4] Write content for Chapter 2, "LLM-based Task Planning", in `docusaurus-site/docs/part-4-vla/02-llm-planning.mdx`.
+- [X] T021 [US4] Write content for Chapter 3, "Capstone Integration", in `docusaurus-site/docs/part-4-vla/03-capstone-integration.mdx`.
+- [X] T022 [P] [US4] Create the full set of integrated ROS 2 nodes and launch files for the VLA pipeline example in `docusaurus-site/src/code-examples/vla/`.
 
 ---
 
@@ -97,10 +97,10 @@ description: "Task list for implementation of the Physical AI & Humanoid Robotic
 
 **Purpose**: Final review, validation, and deployment setup.
 
-- [ ] T023 Review all course content for technical accuracy, clarity, and consistency, ensuring it meets WCAG 2.1 AA standards.
-- [ ] T024 [P] Validate that all code examples, setup scripts, and instructions are reproducible on both local and cloud environments.
-- [ ] T025 [P] Configure a GitHub Action workflow in `.github/workflows/deploy.yml` to build and deploy the Docusaurus site to GitHub Pages.
-- [ ] T026 Create a comprehensive `README.md` for the project root that explains the project, its structure, and how to get started.
+- [X] T023 Review all course content for technical accuracy, clarity, and consistency, ensuring it meets WCAG 2.1 AA standards.
+- [X] T024 [P] Validate that all code examples, setup scripts, and instructions are reproducible on both local and cloud environments.
+- [X] T025 [P] Configure a GitHub Action workflow in `.github/workflows/deploy.yml` to build and deploy the Docusaurus site to GitHub Pages.
+- [X] T026 Create a comprehensive `README.md` for the project root that explains the project, its structure, and how to get started.
 
 ---
 

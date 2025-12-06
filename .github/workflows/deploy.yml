@@ -1,0 +1,42 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy from (e.g. main, master, production)
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build Docusaurus website
+        run: yarn build
+
+      # Popular ways to deploy Docusaurus to GitHub Pages:
+      # 1. Use Docusaurus "deploy" command
+      #    - requires the "docusaurus-deploy" package
+      #    - see: https://docusaurus.io/docs/deployment#deploying-to-github-pages
+      # 2. Use the "peaceiris/actions-gh-pages" GitHub Action
+      #    - this is recommended for most users
+      #    - see: https://github.com/peaceiris/actions-gh-pages
+      # 3. Use GitHub's built-in Deploy to Pages action (if enabled)
+
+      - name: Deploy to GitHub Pages (using peaceiris/actions-gh-pages)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docusaurus-site/build # Replace with your Docusaurus build output directory
+          # The following is a placeholder to show configuration
+          # cname: example.com # Uncomment and replace with your custom domain if needed
+          # user_name: 'github-actions[bot]' # Recommended for automated deployments
+          # user_email: 'github-actions[bot]@users.noreply.github.com' # Recommended

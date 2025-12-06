@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot name="sensor_config_depth_camera">
+  <link name="base_link"/>
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="0.05 0 0.15" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="camera_frame"/>
+  </joint>
+  <link name="camera_frame">
+    <visual>
+      <geometry>
+        <box size="0.02 0.05 0.05"/>
+      </geometry>
+    </visual>
+  </link>
+  <gazebo reference="camera_frame">
+    <sensor name="camera" type="depth">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.047</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>10</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_depth_camera.so">
+        <baseline>0.2</baseline>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>30.0</updateRate>
+        <cameraName>camera_ir</cameraName>
+        <frameName>camera_depth_frame</frameName>
+        <imageTopicName>image_raw</imageTopicName>
+        <depthImageTopicName>depth/image_raw</depthImageTopicName>
+        <pointCloudTopicName>depth/points</pointCloudTopicName>
+        <pointCloudCutoff>0.5</pointCloudCutoff>
+        <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+        <Cx>320.5</Cx>
+        <Cy>240.5</Cy>
+        <focalLength>570.3</focalLength>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>
