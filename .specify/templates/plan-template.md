@@ -31,7 +31,19 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Accuracy**: Is all technical information referenced from official documentation or primary sources?
+- [ ] **Clarity**: Does the proposed language align with a Flesch-Kincaid grade level of 8–10?
+- [ ] **Spec-Driven Development**: Is there an approved `spec.md` for this feature? (This plan itself is part of fulfilling that).
+- [ ] **Reproducibility**: Have provisions been made to test instructions across Windows, macOS, and Linux?
+- [ ] **Integrity**: Is all content original or properly attributed?
+- [ ] **Standards Adherence**:
+    - [ ] Does the plan respect the `Part → Chapter → Section` structure?
+    - [ ] Does it ensure code examples will be runnable and correct?
+    - [ ] Is the output planned as Docusaurus v3+ compatible Markdown?
+- [ ] **Constraint Adherence**:
+    - [ ] Is the feature designed to be built within Docusaurus?
+    - [ ] Is it deployable to GitHub Pages?
+- [ ] **Success Criteria Alignment**: Does this plan lead to output that meets the project's success criteria (no build errors, no broken links, etc.)?
 
 ## Project Structure
 

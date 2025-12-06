@@ -1,55 +1,67 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 0.0.0 -> 1.0.0
+- List of modified principles:
+  - PRINCIPLE_1_NAME -> Accuracy
+  - PRINCIPLE_2_NAME -> Clarity
+  - PRINCIPLE_3_NAME -> Spec-Driven Development
+  - PRINCIPLE_4_NAME -> Reproducibility
+  - PRINCIPLE_5_NAME -> Integrity
+- Added sections:
+  - Standards
+  - Constraints
+  - Success Criteria
+- Removed sections: None
+- Templates requiring updates:
+  - ✅ .specify/templates/plan-template.md
+  - ✅ .specify/templates/spec-template.md
+  - ✅ .specify/templates/tasks-template.md
+- Follow-up TODOs: None
+-->
+# AI/Spec-Driven Book Creation using Docusaurus + GitHub Pages + Spec-Kit Plus + Claude Code Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accuracy
+Content MUST be based on official documentation and validated technical facts. All claims, instructions, and examples are to be rigorously checked against primary sources to ensure they are correct and up-to-date. Rationale: Trust is our most important asset; inaccurate information undermines the project's value and credibility.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity
+Writing MUST be clear, concise, and beginner-friendly, targeting a Flesch-Kincaid grade level of 8–10. Concepts should be explained simply, avoiding jargon where possible or defining it clearly when necessary. Rationale: The goal is to make complex topics accessible to a broad audience, not to create an academic paper.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Spec-Driven Development
+All content and code MUST be developed following a strict Spec-Driven Development (SDD) process. A specification (`spec.md`) must be defined and approved before any implementation begins. Rationale: This ensures work is well-defined, aligned with project goals, and testable from the start.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Reproducibility
+All instructions, examples, and code snippets MUST be fully reproducible on Windows, macOS, and Linux. Environment setup and dependencies must be clearly documented. Rationale: Users must be able to follow along and achieve the same results, regardless of their platform.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Integrity
+All work MUST be original or properly attributed. Plagiarism in any form is strictly forbidden. Rationale: Upholding academic and professional integrity is non-negotiable.
 
-### [PRINCIPLE_6_NAME]
+## Standards
 
+- **Structure**: The book will follow a strict hierarchy: `Part → Chapter → Section → Example → Checklist`.
+- **Code Quality**: All code provided in examples MUST run correctly without errors.
+- **Compatibility**: All Markdown MUST be compatible with Docusaurus v3+.
+- **Diagrams**: Diagrams are to be kept simple and created using Mermaid or ASCII art for maximum compatibility and accessibility.
+- **Terminology**: A consistent set of terminology MUST be used throughout the book.
 
-[PRINCIPLE__DESCRIPTION]
+## Constraints
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+- **Platform**: The entire project MUST be built using Docusaurus.
+- **Deployment**: The final output MUST be deployable to GitHub Pages.
+- **Exportability**: Individual chapters MUST be easily exportable as self-contained Markdown files.
+- **Brevity**: Writing should remain concise and to the point to respect the reader's time.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Success Criteria
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- **Build Health**: A `docusaurus build` command MUST complete without any errors.
+- **Deployment Health**: The project MUST successfully deploy to GitHub Pages.
+- **Example Validity**: All examples MUST be reproducible by a user following the provided steps.
+- **Compliance**: All chapters MUST be clear, spec-compliant, and adhere to this constitution.
+- **Integrity**: There MUST be no broken links in the final deployed site.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the single source of truth for all project standards and principles. All contributions and reviews MUST verify compliance. Any proposed amendments to this constitution require a documented proposal, review, and an approved migration plan to update existing content.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
