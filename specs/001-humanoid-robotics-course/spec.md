@@ -12,6 +12,7 @@
 - Q: Should the course materials be restricted to plain Markdown to ensure maximum portability, or can they leverage the richer, interactive features of MDX? → A: Allow and encourage MDX. Leverage interactive components for things like quizzes, interactive simulations, and callouts.
 - Q: Is this hierarchy a strict, enforced structure that every piece of content must adhere to, or is it a general guideline that can be flexibly interpreted...? → A: Strict Hierarchy: Every Chapter MUST belong to a Part, every Section to a Chapter, etc. The structure is rigidly enforced.
 - Q: Are there any specific accessibility standards (e.g., WCAG 2.1 AA) that the Docusaurus site and course materials must adhere to? → A: WCAG 2.1 AA: Adhere to Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.
+- Q: Should the course specify and standardize on particular versions for ROS 2, Gazebo, Unity, and NVIDIA Isaac..., or should it aim for compatibility across a range of recent versions? → A: Specific Versions: Standardize on a particular, well-documented version for each core technology (e.g., ROS 2 Humble, Gazebo Garden, specific Unity LTS, specific Isaac Sim release).
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -97,6 +98,7 @@ As a student, I want to build an end-to-end system that allows a humanoid robot 
 - **FR-010**: The course MUST provide two parallel sets of detailed setup instructions for both a local RTX-enabled workstation and a specific, documented cloud GPU environment.
 - **FR-011**: All course content MUST strictly adhere to the `Part → Chapter → Section → Example → Checklist` hierarchy defined in the Constitution.
 - **FR-012**: The Docusaurus site and all course materials MUST adhere to Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.
+- **FR-013**: The course MUST specify and standardize on particular, well-documented versions for ROS 2, Gazebo, Unity, and NVIDIA Isaac.
 
 ### Out of Scope
 
