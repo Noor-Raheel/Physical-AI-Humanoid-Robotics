@@ -1,3 +1,7 @@
+---
+sidebar_position: 0
+sidebar_label: "Course Stack"
+---
 # 00 - Course Technology Stack
 
 This document formalizes the specific versions of the core technologies used throughout the "Physical AI & Humanoid Robotics" course. Standardizing these versions ensures reproducibility and minimizes compatibility issues for students.

@@ -1,52 +1,63 @@
-import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import React from 'react';
+
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
+  image: string;
+  description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Spec-Driven Development',
+    image: '/img/spec-driven.png', // Assuming this image exists
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Adopt a robust methodology where specifications drive the entire development lifecycle,
+        ensuring clarity, consistency, and verifiable outcomes in complex robotics projects.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'AI-Assisted Writing & Design',
+    image: '/img/ai-writing.png', // Assuming this image exists
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Leverage advanced AI tools to streamline documentation, code generation, and architectural
+        design, enhancing productivity and quality across your projects.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Architecture-First Approach',
+    image: '/img/architecture.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Prioritize architectural clarity and scalable design patterns to build resilient and
+        maintainable Physical AI systems from the ground up.
+      </>
+    ),
+  },
+  {
+    title: 'Physical AI & Robotics Content',
+    image: '/img/hero-robot.png', // Using hero-robot.png as it seems more relevant to physical AI
+    description: (
+      <>
+        Dive deep into the core concepts of Physical AI, humanoid robotics, and advanced perception
+        systems, blending theoretical knowledge with practical implementations.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, image, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} alt={title} src={image} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -56,10 +67,13 @@ function Feature({title, Svg, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h2" className={clsx('text--center', styles.sectionTitle)}>
+          Key Highlights of This Book
+        </Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
